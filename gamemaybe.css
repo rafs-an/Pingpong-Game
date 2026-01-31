@@ -1,0 +1,113 @@
+.box{
+    border:2px solid black;
+    background-color: rgb(240, 82, 108);
+    height: 12vh;
+    width:6vw;
+    margin: 2vw;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+
+    animation-name: moving;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(12);
+    animation-play-state: paused;
+}
+
+.f{
+    animation-delay: 1s;
+}
+
+.s{
+    animation-delay: 5s;
+}
+
+.t{
+    animation-delay: 3s;
+}
+
+.fo{
+    animation-delay: 2s;
+}
+
+.fif{
+    animation-delay: 6s;
+}
+
+.si{
+    animation-delay: 4s;
+}
+
+.se{
+    animation-delay: 3.5s;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.base{
+    height:20vh;
+    width:100%;
+    background-color: green;
+    margin-top: auto;
+    position: absolute;
+    top:80vh;
+    display: flex;
+    align-items: end;
+}
+
+.mud{
+    height:10vh;
+    width:100%;
+    background-color: rgb(114, 27, 27);
+}
+
+.result{
+    height: 8vh;
+    width:100%;
+    background-color: rgb(114, 27, 27);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.butt{
+    height:1rem;
+}
+
+.ball{
+    display:flex;
+    justify-content: center;
+    height:30vh;
+    position: absolute;
+    top: 5vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+button{
+    height: 8vh;
+    width:7vw;
+    border-radius: 1vh;
+    
+}
+
+@keyframes moving {
+   0%{
+         transform:translateY(0vh);
+   }
+
+   100%{
+          transform:translateY(65vh);
+   }
+}
